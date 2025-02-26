@@ -1,6 +1,6 @@
 ## Introduction
 
-Implements a bounding box merging algorithm to be used in Design-remix. The merging logic is inspired from [1].
+Implements a bounding box merging algorithm. The merging logic is inspired from [1].
 
 We iterate through all the bounding boxes associated with a template and extend/enlarge them using two parameters
 **delta_x** and **delta_y**. If two bounding boxes overlap after the extension then these are merged by considering their
@@ -11,8 +11,6 @@ In total, we need to set three parameters:
 * delta_x : Determines % extension on the x-axis.
 * delta_y : Determines % extension on the y-axis.
 * iou_threshold : Determines the IoU threshold below which two bounding boxes are merged.
-
-This [doc](https://https://docs.google.com/document/d/1IscgVgU2cpLAhmzIm1uNZBkrrrJ9R8MAR6D9W043Qmo/edit?usp=sharing) provides an analysis of the effect of these parameters.
 
 ## Visualisations
 
